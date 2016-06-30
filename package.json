@@ -1,0 +1,52 @@
+{
+  "name": "angular-material-webpack-gulp-sass-ui-router-seed",
+  "version": "0.0.0",
+  "description": "A starter project for Angular Material, webpack, gulp, sass and ui-router",
+  "license": "MIT",
+  "repository": "https://github.com/angular/angular-material-webpack-gulp-sass-ui-router-seed",
+  "private": true,
+  "scripts": {
+    "prestart": "npm install",
+    "start": "gulp",
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js --single-run",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor e2e-tests/protractor.conf.js",
+    "preprod": "npm install",
+    "prod": "gulp --prod"
+  },
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-animate": "^1.5.6",
+    "angular-aria": "^1.5.6",
+    "angular-material": "^1.1.0-rc.5",
+    "angular-ui-router": "^0.3.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.7",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.0.0",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "html-loader": "^0.4.3",
+    "jasmine-core": "^2.4.1",
+    "json-loader": "^0.5.4",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8",
+    "karma-junit-reporter": "^0.4.1",
+    "karma-webpack": "^1.7.0",
+    "node-sass": "^3.8.0",
+    "protractor": "^3.2.2",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-stream": "^3.2.0"
+  }
+}

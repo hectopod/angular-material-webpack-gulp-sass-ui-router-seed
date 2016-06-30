@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- @if ENV='prod' -->
+    <link rel="stylesheet" href="bundle.min.css">
+    <!-- @endif -->
+    <!-- @if ENV='dev' -->
+    <link rel="stylesheet" href="bundle.css">
+    <!-- @endif -->
+</head>
+
+<body ng-app="myApp" ng-cloak>
+    <md-content class="md-padding">
+        <md-nav-bar md-selected-nav-item="'view1'" nav-bar-aria-label="navigation links">
+            <md-nav-item md-nav-click="go('view1')">view1</md-nav-item>
+            <md-nav-item md-nav-click="go('view2')">view2</md-nav-item>
+        </md-nav-bar>
+
+        <div ui-view></div>
+
+        <div>Angular seed app: v<span app-version></span></div>
+    </md-content>
+    <!-- @if ENV='prod' -->
+    <script type="text/javascript" src="bundle.min.js"></script>
+    <!-- @endif -->
+    <!-- @if ENV='dev' -->
+    <script type="text/javascript" src="bundle.js"></script>
+    <!-- @endif -->
+</body>
+</html>
