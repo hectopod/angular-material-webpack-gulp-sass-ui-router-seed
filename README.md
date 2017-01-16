@@ -1,4 +1,4 @@
-# scope-soup-seed — the ingredients are AngularJS, Material, Gulp, webpack, sass and ui-router apps
+# scope-soup-seed — the ingredients are AngularJS, Material, Gulp, webpack, sass and ui-router
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) and is a fork of 
 [angular-seed](https://github.com/angular/angular-seed).
